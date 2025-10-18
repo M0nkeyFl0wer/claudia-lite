@@ -1,0 +1,33 @@
+[workspace]
+members = [
+  "crates/app",
+  "crates/agent_host",
+  "crates/providers",
+  "crates/services",
+  "crates/shared",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+authors = ["Your Team"]
+license = "MIT"
+
+[workspace.dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+log = "0.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+regex = "1"
+walkdir = "2"
+ignore = "0.4"
+strsim = "0.11"
+parking_lot = "0.12"
+chrono = { version = "0.4", features = ["clock"] }
+directories = "5"

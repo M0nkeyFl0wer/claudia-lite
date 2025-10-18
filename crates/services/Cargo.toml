@@ -1,0 +1,15 @@
+[package]
+name = "services"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+ignore = { workspace = true }
+walkdir = { workspace = true }
+strsim = { workspace = true }
+regex = { workspace = true }
+chrono = { workspace = true }
+shared = { path = "../shared" }
