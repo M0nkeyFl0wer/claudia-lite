@@ -9,11 +9,14 @@ egui = "0.27"
 anyhow = { workspace = true }
 shared = { path = "../shared" }
 services = { path = "../services" }
+agent_host = { path = "../agent_host" }
 parking_lot = { workspace = true }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
 directories = { workspace = true }
 serde_json = { workspace = true }
+chrono = { workspace = true }
+tokio = { workspace = true }
 
 [package.metadata]
 description = "Little Helper - Tarah's File Finder GUI"

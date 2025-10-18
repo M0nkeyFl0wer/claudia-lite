@@ -19,7 +19,7 @@ pub mod settings {
         fn default() -> Self {
             Self {
                 allowed_dirs: vec![],
-                model: ModelProvider { local_model: "llama3.1:8b-instruct-q4".into(), enable_gemini: false },
+                model: ModelProvider { local_model: "llama3.2:3b".into(), enable_gemini: false },
                 enable_internet_research: false,
                 max_results: 200,
             }
